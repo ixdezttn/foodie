@@ -15,7 +15,7 @@ TG频道群：https://t.me/py996
 
 [rewrite_local]
 
-^https:\/\/purchase-foodie-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yiruikecorp.js
+^https:\/\/purchase-foodie-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status url script-response-body https://github.com/ixdezttn/foodie/blob/main/foodie.js
 
 [mitm] 
 
