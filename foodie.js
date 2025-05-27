@@ -13,32 +13,18 @@ TG频道群：https://t.me/py996
 
 *******************************
 
-[rewrite_local]
-
-^https:\/\/purchase-foodie-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status url script-response-body https://github.com/ixdezttn/foodie/blob/main/foodie.js
-
-[mitm] 
-
-hostname = purchase-foodie-api.snow.me
-
-
 
 *******************************/
 
 var objc = JSON.parse($response.body);
 
     objc = {
-  "result" : {
-    "activated" : true,
-    "products" : [
-      {
-        "managed" : false,
-        "status" : "ACTIVE",
-        "startDate" : 1666666666666,
-        "productId" : "com.linecorp.Foodiecn.subscribe.oneyear",
-        "expireDate" : 4092599349000
-      }
-    ]
-  }
+{
+	"result": {
+		"activated": true,
+		"products": [],
+		"vipSegments": ["NEVER_USED_VIP"]
+	}
+}
 }
 $done({body : JSON.stringify(objc)});
